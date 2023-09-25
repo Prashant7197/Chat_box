@@ -1,0 +1,12 @@
+<!-- chatbox_app/templates/message_form.html -->
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label for="content">Message Content:</label>
+    <textarea id="content" name="content"></textarea>
+    <br>
+    <label for="attachment">Attachment:</label>
+    <input type="file" id="attachment" name="attachment">
+    <br>
+    <input type="submit" value="Create Message">
+</form>
